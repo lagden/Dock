@@ -6,21 +6,23 @@ Documentação
 ------------
 
 > Especificação da Api Dock
-> 
-> As rotas da aplicação
+>
+> Aplicação de gerenciamento de vinhetas e notificações.
 
-`auth            POST   /login.:sf_format`
-`template        GET    /template/:id.:sf_format`
-`decoration      GET    /decoracao/:id.:sf_format`
-`log             POST   /log/grava.:sf_format`
-`channel         GET    /canal/lista.:sf_format`
-`homepage        ANY    /`
+### Rotas
+
+    auth            POST   /login.:sf_format
+    template        GET    /template/:id.:sf_format
+    decoration      GET    /decoracao/:id.:sf_format
+    log             POST   /log/grava.:sf_format
+    channel         GET    /canal/lista.:sf_format
+    homepage        ANY    /
 
 Autenticação
 ------------
 
 ### Url
-http://api.seepix.dock.seepix.com.br/login.format
+`http://api.seepix.dock.seepix.com.br/login.format`
 
 ### Formatos (format)
 xml
@@ -30,7 +32,7 @@ HTTP Basic Authentication
 
 ### Example Response (Ok)
 
-    http://api.seepix.dock.seepix.com.br/login.xml
+http://api.seepix.dock.seepix.com.br/login.xml
 
     <?xml version="1.0" encoding="UTF-8"?>
     <user>
@@ -51,7 +53,7 @@ Template
 --------
 
 ### Url
-http://api.seepix.dock.seepix.com.br/template/:id.format
+`http://api.seepix.dock.seepix.com.br/template/:id.format`
 
 ### Formatos (format)
 xml
@@ -67,7 +69,7 @@ true
 
 ### Example Response (Ok)
 
-    http://api.seepix.dock.seepix.com.br/template/1.xml
+http://api.seepix.dock.seepix.com.br/template/1.xml
 
     <?xml version="1.0" encoding="UTF-8"?>
     <template id="1"><![CDATA[http://api.seepix.dock.seepix.com.br/uploads/test/templates/1/template.swf]]></template>
@@ -82,7 +84,7 @@ Decoração
 ---------
 
 ### Url
-http://api.seepix.dock.seepix.com.br/decoracao/:id.format
+`http://api.seepix.dock.seepix.com.br/decoracao/:id.format`
 
 ### Formatos (format)
 xml
@@ -98,7 +100,7 @@ true
 
 ### Example Response (Ok)
 
-    http://api.seepix.dock.seepix.com.br/decoracao/1.xml
+http://api.seepix.dock.seepix.com.br/decoracao/1.xml
 
     <?xml version="1.0" encoding="UTF-8"?>
     <decoration id="1"><![CDATA[http://api.seepix.dock.seepix.com.br/uploads/test/decorations/1/image.png]]></decoration>
@@ -113,7 +115,7 @@ Log
 ---
 
 ### Url
-http://api.seepix.dock.seepix.com.br/log/grava.format
+`http://api.seepix.dock.seepix.com.br/log/grava.format`
 
 ### Formatos (format)
 xml
@@ -131,7 +133,7 @@ true
 
 ### Example Response (Ok)
 
-    http://api.seepix.dock.seepix.com.br/log/grava.xml
+http://api.seepix.dock.seepix.com.br/log/grava.xml
 
     <?xml version="1.0" encoding="UTF-8"?>
     <log><![CDATA[Salvo]]></log>
@@ -149,7 +151,7 @@ Listagem de Vinhetas e Notificações
 -----------------------------------
  
 ### Url
-http://api.seepix.dock.seepix.com.br/canal/lista.format
+`http://api.seepix.dock.seepix.com.br/canal/lista.format`
 
 ### Formatos (format)
 xml
@@ -162,7 +164,7 @@ true
 
 ### Example Response
 
-    http://api.seepix.dock.seepix.com.br/canal/lista.xml
+http://api.seepix.dock.seepix.com.br/canal/lista.xml
 
     <?xml version="1.0" encoding="UTF-8"?>
     <dock>
@@ -218,3 +220,4 @@ true
         
       </channels>
     </dock>
+

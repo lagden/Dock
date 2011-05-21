@@ -1,12 +1,13 @@
 # Dock Api (Seepix Digital) - Version 0.2.1
 
 ![Dock Icon](https://github.com/lagden/Dock/raw/master/img/logo_dock.png)
+
 http://seepix.com.br/
 
 Documentação
 ------------
 
-> Especificação da Api Dock (gerenciamento de vinhetas e notificações).
+> Especificação da Api Dock (Gerenciador de vinhetas e notificações).
 
 ### Rotas
 

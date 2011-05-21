@@ -1,24 +1,20 @@
 # Dock Api - version 0.1
 
-![Dock Icon](https://github.com/unconed/TermKit/raw/master/Illustrator/TermKit%20Icon%20128.png)
+![Dock Icon](https://github.com/lagden/Dock/raw/master/img/logo_dock.png)
 
 Documentação
 ------------
 
 > Especificação da Api Dock
 > 
-> auth            POST   /login.:sf_format
->
-> template        GET    /template/:id.:sf_format
->
-> decoration      GET    /decoracao/:id.:sf_format
->
-> log             POST   /log/grava.:sf_format
->
-> channel         GET    /canal/lista.:sf_format
->
-> homepage        ANY    /
+> As rotas da aplicação
 
+`auth            POST   /login.:sf_format`
+`template        GET    /template/:id.:sf_format`
+`decoration      GET    /decoracao/:id.:sf_format`
+`log             POST   /log/grava.:sf_format`
+`channel         GET    /canal/lista.:sf_format`
+`homepage        ANY    /`
 
 Autenticação
 ------------

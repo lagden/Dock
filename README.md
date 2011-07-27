@@ -115,7 +115,7 @@ Log
 ---
 
 ### Url
-`http://api.seepix.dock.seepix.com.br/log/grava.format`
+`http://api.seepix.dock.seepix.com.br/log/posta.format`
 
 ### Formatos (format)
 xml
@@ -133,7 +133,7 @@ true
 
 ### Example Response (Ok)
 
-http://api.seepix.dock.seepix.com.br/log/grava.xml
+http://api.seepix.dock.seepix.com.br/log/posta.xml
 
     <?xml version="1.0" encoding="UTF-8"?>
     <log><![CDATA[Salvo]]></log>
@@ -141,7 +141,43 @@ http://api.seepix.dock.seepix.com.br/log/grava.xml
 ### Example Response (Error)
 
     <?xml version="1.0" encoding="UTF-8"?> 
-    <error><![CDATA[Somente método POST]]></error>
+    <error><![CDATA[Somente POST]]></error>
+
+    <?xml version="1.0" encoding="UTF-8"?> 
+    <error><![CDATA[POST inválido]]></error>
+
+
+Log de Mensagens (status de leitura)
+------------------------------------
+
+### Url
+`http://api.seepix.dock.seepix.com.br/log/mensagem/posta.format`
+
+### Formatos (format)
+xml
+
+### Method
+POST
+
+### Parameters
+* status ['Não','Sim','Incompleto'] (requerido)
+* channel_id (requerido)
+* note_id (opcional)
+
+### Requires Authentication
+true
+
+### Example Response (Ok)
+
+http://api.seepix.dock.seepix.com.br/log/mensagem/posta.xml
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <log><![CDATA[Salvo]]></log>
+
+### Example Response (Error)
+
+    <?xml version="1.0" encoding="UTF-8"?> 
+    <error><![CDATA[Somente POST]]></error>
 
     <?xml version="1.0" encoding="UTF-8"?> 
     <error><![CDATA[POST inválido]]></error>

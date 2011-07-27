@@ -63,7 +63,7 @@ xml
 GET
 
 ### Parameters
-* id (requerido)
+* id (required)
 
 ### Requires Authentication
 true
@@ -94,7 +94,7 @@ xml
 GET
 
 ### Parameters
-* id (requerido)
+* id (required)
 
 ### Requires Authentication
 true
@@ -124,8 +124,8 @@ xml
 ### Method
 POST
 
-### Parameters
-* message (requerido)
+### Values
+* message (required)
 * channel_id (opcional)
 * note_id (opcional)
 
@@ -160,9 +160,9 @@ xml
 ### Method
 POST
 
-### Parameters
-* status (options: 'Não','Sim','Incompleto') (requerido)
-* channel_id (requerido)
+### Values
+* status (options: 'Não', 'Sim', 'Incompleto') (required)
+* channel_id (required)
 * note_id (opcional)
 
 ### Requires Authentication

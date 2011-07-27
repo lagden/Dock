@@ -25,7 +25,7 @@ Autenticação
 ### Url
 `http://api.seepix.dock.seepix.com.br/login.:format`
 
-### Formatos (format)
+### Formats
 xml
 
 ### Method
@@ -56,7 +56,7 @@ Template
 ### Url
 `http://api.seepix.dock.seepix.com.br/template/:id.:format`
 
-### Formatos (format)
+### Formats
 xml
 
 ### Method
@@ -87,7 +87,7 @@ Decoração
 ### Url
 `http://api.seepix.dock.seepix.com.br/decoracao/:id.:format`
 
-### Formatos (format)
+### Formats
 xml
 
 ### Method
@@ -118,7 +118,7 @@ Log
 ### Url
 `http://api.seepix.dock.seepix.com.br/log/posta.:format`
 
-### Formatos (format)
+### Formats
 xml
 
 ### Method
@@ -154,7 +154,7 @@ Log de Mensagens (status de leitura)
 ### Url
 `http://api.seepix.dock.seepix.com.br/log/mensagem/posta.:format`
 
-### Formatos (format)
+### Formats
 xml
 
 ### Method
@@ -190,7 +190,7 @@ Listagem de Vinhetas e Notificações
 ### Url
 `http://api.seepix.dock.seepix.com.br/canal/lista.:format`
 
-### Formatos (format)
+### Formats
 xml
 
 ### Method

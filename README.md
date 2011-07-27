@@ -11,18 +11,19 @@ Documentação
 
 ### Rotas
 
-    auth            POST   /login.:sf_format
-    template        GET    /template/:id.:sf_format
-    decoration      GET    /decoracao/:id.:sf_format
-    log             POST   /log/grava.:sf_format
-    channel         GET    /canal/lista.:sf_format
+    auth            POST   /login.:format
+    template        GET    /template/:id.:format
+    decoration      GET    /decoracao/:id.:format
+    log             POST   /log/posta.:format
+    log_message     POST   /log/mensagem/posta.:format
+    channel         GET    /canal/lista.:format
     homepage        ANY    /
 
 Autenticação
 ------------
 
 ### Url
-`http://api.seepix.dock.seepix.com.br/login.format`
+`http://api.seepix.dock.seepix.com.br/login.:format`
 
 ### Formatos (format)
 xml
@@ -53,7 +54,7 @@ Template
 --------
 
 ### Url
-`http://api.seepix.dock.seepix.com.br/template/:id.format`
+`http://api.seepix.dock.seepix.com.br/template/:id.:format`
 
 ### Formatos (format)
 xml
@@ -84,7 +85,7 @@ Decoração
 ---------
 
 ### Url
-`http://api.seepix.dock.seepix.com.br/decoracao/:id.format`
+`http://api.seepix.dock.seepix.com.br/decoracao/:id.:format`
 
 ### Formatos (format)
 xml
@@ -115,7 +116,7 @@ Log
 ---
 
 ### Url
-`http://api.seepix.dock.seepix.com.br/log/posta.format`
+`http://api.seepix.dock.seepix.com.br/log/posta.:format`
 
 ### Formatos (format)
 xml
@@ -151,7 +152,7 @@ Log de Mensagens (status de leitura)
 ------------------------------------
 
 ### Url
-`http://api.seepix.dock.seepix.com.br/log/mensagem/posta.format`
+`http://api.seepix.dock.seepix.com.br/log/mensagem/posta.:format`
 
 ### Formatos (format)
 xml
@@ -160,7 +161,7 @@ xml
 POST
 
 ### Parameters
-* status ['Não','Sim','Incompleto'] (requerido)
+* status (options: 'Não','Sim','Incompleto') (requerido)
 * channel_id (requerido)
 * note_id (opcional)
 
@@ -187,7 +188,7 @@ Listagem de Vinhetas e Notificações
 -----------------------------------
  
 ### Url
-`http://api.seepix.dock.seepix.com.br/canal/lista.format`
+`http://api.seepix.dock.seepix.com.br/canal/lista.:format`
 
 ### Formatos (format)
 xml

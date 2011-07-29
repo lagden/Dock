@@ -203,58 +203,61 @@ true
 
 http://api.seepix.dock.seepix.com.br/canal/lista.xml
 
-    <?xml version="1.0" encoding="UTF-8"?>
-    <dock>
-      <channels>
-      
-        <channel id="1" date_ini="2011-05-01 16:32:15" date_end="2011-08-01 16:32:15">
-          <template id="1"><![CDATA[http://api.seepix.dock.seepix.com.br/uploads/test/templates/1/template.swf]]></template>
-          <moment type="Login"/>
-          <frequency type="Semana">
-            <day value="Segunda"/>
-            <day value="Quinta"/>
-          </frequency>
-        </channel>
-        
-        <channel id="2" date_ini="2011-04-01 16:32:15" date_end="2011-06-01 16:32:15">
-          <template id="2"><![CDATA[http://api.seepix.dock.seepix.com.br/uploads/test/templates/2/template.swf]]></template>
-          <moment type="Hora">
-            <time value="13:51"/>
-            <time value="14:00"/>
-            <time value="13:51"/>
-          </moment>
-          <frequency type="Mês"> 
-            <day value="1"/>
-            <day value="15"/>
-          </frequency>
-        </channel>
-        
-        <channel id="3" date_ini="2011-04-01 16:32:15" date_end="2011-06-01 16:32:15">
-          <template id="3"><![CDATA[http://api.seepix.dock.seepix.com.br/uploads/test/templates/3/template.swf]]></template>
-          <decoration id="2" border_top="10" border_right="10" border_bottom="10" border_left="10"><![CDATA[http://api.seepix.dock.seepix.com.br/uploads/test/decorations/1/image.png]]></decoration>
-          <moment type="Hora">
-            <time value="13:51"/>
-            <time value="14:00"/>
-            <time value="13:51"/>
-          </moment>
-          <frequency type="Semana">
-            <day value="Segunda"/>
-            <day value="Quarta"/>
-            <day value="Sexta"/>
-          </frequency> 
-          <notes> 
-            <note id="1">
-              <item type="title"><![CDATA[Nota 1]]></item>
-              <item type="description"><![CDATA[Descrição da Nota 1]]></item>
-            </note> 
-            <note id="2"> 
-              <item type="title"><![CDATA[Nota 2 com HTML]]></item>
-              <item type="description"><![CDATA[Descrição da Nota 1]]></item>
-              <item type="html" file="http://api.seepix.dock.seepix.com.br/file.zip"><![CDATA[<b>Superr!!!</b><p>Teste do html</p>]]></item>
-            </note>
-          </notes>
-        </channel>
-        
-      </channels>
+
+    <?xml version="1.0" encoding="UTF-8"?> 
+    <dock> 
+     <channels> 
+      <channel id="4" date_ini="2011-04-01 00:00:00" date_end="2011-09-01 00:00:00" updated_at="2011-07-29 11:28:48"> 
+       <template id="3" updated_at="2011-07-29 11:25:58"><![CDATA[http://api.dock/uploads/template/3/file.swf]]></template> 
+       <decoration id="1" border_top="10" border_right="10" border_bottom="10" border_left="10" updated_at="2011-07-29 11:25:58"><![CDATA[http://api.dock/uploads/decoration/1/image.png]]></decoration> 
+       <moment type="Hora"> 
+        <time value="13:51"/> 
+        <time value="14:00"/> 
+       </moment> 
+       <frequency type="Semana"> 
+        <day value="Segunda"/> 
+        <day value="Quarta"/> 
+        <day value="Sexta"/> 
+       </frequency> 
+       <notes> 
+        <note id="2" updated_at="2011-07-29 11:28:48"> 
+         <item type="title"><![CDATA[Nota 2 com HTML]]></item> 
+         <item type="description"><![CDATA[Descri&ccedil;&atilde;o da Nota 1]]></item> 
+         <item type="html"><![CDATA[<p><b>Superr!!!</b></p>
+    <p><img src="/uploads/editorFiles/456/Thumbnails/b8/3d2a_festa181c3818e3349a4a21f918be19f-250x250.jpg" width="250" height="166" alt="festa na seepix" title="festa na seepix" /></p>
+    <p>Teste do html</p>]]></item> 
+        </note> 
+       </notes> 
+       <files updated_at="2011-07-29 11:28:48"><![CDATA[http://api.dock/uploads/editorFiles/456/456.zip]]></files> 
+      </channel> 
+      <channel id="1" date_ini="2011-05-01 16:32:15" date_end="2011-09-01 16:32:15" updated_at="2011-07-29 11:25:58"> 
+       <template id="1" updated_at="2011-07-29 11:25:58"><![CDATA[http://api.dock/uploads/template/1/file.swf]]></template> 
+       <moment type="Login"/> 
+       <frequency type="Semana"> 
+        <day value="Segunda"/> 
+        <day value="Quinta"/> 
+       </frequency> 
+      </channel> 
+      <channel id="3" date_ini="2011-04-01 16:32:15" date_end="2011-09-01 16:32:15" updated_at="2011-07-29 11:25:58"> 
+       <template id="3" updated_at="2011-07-29 11:25:58"><![CDATA[http://api.dock/uploads/template/3/file.swf]]></template> 
+       <decoration id="1" border_top="10" border_right="10" border_bottom="10" border_left="10" updated_at="2011-07-29 11:25:58"><![CDATA[http://api.dock/uploads/decoration/1/image.png]]></decoration> 
+       <moment type="Hora"> 
+        <time value="13:51"/> 
+        <time value="14:00"/> 
+        <time value="13:51"/> 
+       </moment> 
+       <frequency type="Semana"> 
+        <day value="Segunda"/> 
+        <day value="Quarta"/> 
+        <day value="Sexta"/> 
+       </frequency> 
+       <notes> 
+        <note id="1" updated_at="2011-07-29 11:25:58"> 
+         <item type="title"><![CDATA[Nota 1]]></item> 
+         <item type="description"><![CDATA[Descrição da Nota 1]]></item> 
+        </note> 
+       </notes> 
+      </channel> 
+     </channels> 
     </dock>
 
